@@ -7,9 +7,10 @@
 
 	<!-- Stylesheets
 	============================================= -->
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700&display=swap" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700|Nunito:900&display=swap" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/swiper.css" type="text/css" />
 
 	<!-- One Page Module Specific Stylesheet -->
 	<link rel="stylesheet" href="one-page/onepage.css" type="text/css" />
@@ -28,89 +29,27 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>One Page Module | Canvas</title>
+	<title>Parallax - One Page Module | Canvas</title>
+
+	<style>
+		.slider-text {
+			font-size: 6rem;
+			font-family: 'Nunito', sans-serif;
+			line-height: 1;
+		}
+
+		@media (max-width: 991.98px) {
+			.slider-text {
+				font-size: 7vw;
+			}
+		}
+
+		.secondary-color { background: rgb(224,213,209) !important; }
+	</style>
 
 </head>
 
-<body class="stretched side-push-panel">
-
-	<div class="body-overlay"></div>
-
-	<div id="side-panel" class="dark">
-
-		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
-
-		<div class="side-panel-wrap">
-
-			<div class="widget widget_links clearfix">
-
-				<h4>About Canvas</h4>
-
-				<div style="font-size: 14px; line-height: 1.7;">
-					<address style="line-height: 1.7;">
-						795 Folsom Ave, Suite 600<br>
-						San Francisco, CA 94107<br>
-					</address>
-
-					<div class="clear topmargin-sm"></div>
-
-					<abbr title="Phone Number">Phone:</abbr> (1) 8547 632521<br>
-					<abbr title="Fax">Fax:</abbr> (1) 11 4752 1433<br>
-					<abbr title="Email Address">Email:</abbr> info@canvas.com
-				</div>
-
-			</div>
-
-			<div class="widget clearfix">
-
-				<h4>Connect Socially</h4>
-
-				<a href="#" class="social-icon si-small si-colored si-facebook" title="Facebook">
-					<i class="icon-facebook"></i>
-					<i class="icon-facebook"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-twitter" title="Twitter">
-					<i class="icon-twitter"></i>
-					<i class="icon-twitter"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-github" title="Github">
-					<i class="icon-github"></i>
-					<i class="icon-github"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-pinterest" title="Pinterest">
-					<i class="icon-pinterest"></i>
-					<i class="icon-pinterest"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-forrst" title="Forrst">
-					<i class="icon-forrst"></i>
-					<i class="icon-forrst"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-linkedin" title="LinkedIn">
-					<i class="icon-linkedin"></i>
-					<i class="icon-linkedin"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-gplus" title="Google Plus">
-					<i class="icon-gplus"></i>
-					<i class="icon-gplus"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-instagram" title="Instagram">
-					<i class="icon-instagram"></i>
-					<i class="icon-instagram"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-flickr" title="Flickr">
-					<i class="icon-flickr"></i>
-					<i class="icon-flickr"></i>
-				</a>
-				<a href="#" class="social-icon si-small si-colored si-skype" title="Skype">
-					<i class="icon-skype"></i>
-					<i class="icon-skype"></i>
-				</a>
-
-			</div>
-
-		</div>
-
-	</div>
+<body class="stretched">
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -118,7 +57,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="full-header transparent-header border-full-header dark header-size-custom" data-sticky-shrink="false" data-sticky-class="not-dark" data-sticky-offset="full" data-sticky-offset-negative="100">
+		<header id="header" class="full-header transparent-header border-full-header header-size-custom" data-sticky-shrink="false" data-sticky-class="secondary-color">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
@@ -129,14 +68,6 @@
 							<a href="index.html" class="standard-logo" data-dark-logo="one-page/images/canvasone-dark.png"><img src="one-page/images/canvasone.png" alt="Canvas Logo"></a>
 							<a href="index.html" class="retina-logo" data-dark-logo="one-page/images/canvasone-dark@2x.png"><img src="one-page/images/canvasone@2x.png" alt="Canvas Logo"></a>
 						</div><!-- #logo end -->
-
-						<div class="header-misc">
-
-							<div class="side-panel-trigger header-misc-icon">
-								<a href="#"><i class="icon-ellipsis-v"></i></a>
-							</div>
-
-						</div>
 
 						<div id="primary-menu-trigger">
 							<svg class="svg-trigger" viewBox="0 0 100 100"><path d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"></path><path d="m 30,50 h 40"></path><path d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"></path></svg>
@@ -174,40 +105,29 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
-
 		<!-- Slider
 		============================================= -->
-		<section id="slider" class="slider-element slider-parallax dark min-vh-60 min-vh-md-100 include-header">
-			<div class="slider-inner" style="background-image: url('one-page/images/page/main.jpg'); background-size: cover; background-position: center center;">
+		<section id="slider" class="slider-element min-vh-100 include-header" style="height: 950px">
 
-				<div class="vertical-middle slider-element-fade">
-					<div class="container text-center py-5">
-						<div class="emphasis-title">
-							<h1>
-								<span class="text-rotater nocolor" data-separator="|" data-rotate="fadeIn" data-speed="6000">
-									<span class="t-rotate fw-bold font-body opm-large-word">canvas.|different.|creative.|digital.|vision.</span>
-								</span>
-							</h1>
-						</div>
-						<a href="#" class="button button-border button-light button-circle" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70">View our Works</a>
-					</div>
+			<div class="w-100 h-100 position-absolute" style="background: url('one-page/images/page/parallax/parallax-1.png') center center no-repeat; background-size: cover;" data-0-top="top: 0px" data-900="top: 300px"></div>
+			<div class="w-100 h-100 position-absolute" style="background: url('one-page/images/page/parallax/parallax-2.png') center center no-repeat; background-size: cover; z-index: 8" data-0="top:0px" data-900="top: 140px"></div>
+			<div class="w-100 h-100 position-absolute" class="" style="background: url('one-page/images/page/parallax/parallax-3.png') center bottom no-repeat; background-size: cover; z-index: 9"></div>
+
+			<div class="container">
+				<div class="vertical-middle">
+					<h2 class="slider-text text-uppercase text-end fw-bolder" data-0="margin-top: -300px; opacity: 1" data-450="margin-top: 0px; opacity: .4">Parallax<br>Adventure</h2>
 				</div>
-
-				<div class="video-wrap">
-					<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
-				</div>
-
-				<a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="65" class="one-page-arrow dark"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
-
 			</div>
+
 		</section><!-- #slider end -->
 
 		<!-- Content
 		============================================= -->
 		<section id="content">
+
 			<div class="content-wrap py-0">
 
-				<div id="section-about" class="center page-section">
+				<div id="section-about" class="center page-section pt-0 secondary-color">
 
 					<div class="container clearfix">
 
