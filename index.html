@@ -440,6 +440,7 @@
 				</div>
 			</div><!-- END REVOLUTION SLIDER -->
 
+		</section>
 		<section id="content">
 
 			<div class="content-wrap py-0">
@@ -1154,6 +1155,66 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+
+</body>
+</html>
+
+	<!-- ADD-ONS JS FILES -->
+	<script>
+		var revapi145,
+			tpj;
+		var $ = jQuery.noConflict();
+
+		(function() {
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();
+
+			function onLoad() {
+				if (tpj===undefined) { tpj = jQuery; if("off" == "on") tpj.noConflict();}
+
+				if(tpj("#rev_slider_145_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_145_1");
+				}else{
+					revapi145 = tpj("#rev_slider_145_1").show().revolution({
+						sliderType:"hero",
+						jsFileLocation:"include/rs-plugin/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[1200,968,960,960],
+						lazyType:"none",
+						parallax: {
+							type:"scroll",
+							origo:"enterpoint",
+							speed:400,
+						  speedbg:0,
+						  speedls:0,
+							levels:[10,20,30,40,50,60,-10,-20,-30,-40,-50,-60,-70,-80,-90,55],
+						},
+						shadow:0,
+						spinner:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"off",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							disableFocusListener:false,
+						}
+					});
+				} /* END OF revapi call */
+
+				if(typeof ExplodingLayersAddOn !== "undefined") ExplodingLayersAddOn(tpj, revapi145);
+			} /* END OF ON LOAD FUNCTION */
+		}()); /* END OF WRAPPING FUNCTION */
+	</script>
 
 </body>
 </html>
