@@ -12,7 +12,7 @@
 /*  This is for styling the main container that holds everything */
 
 #container {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     position: relative;
     background: #f7f7f7;
@@ -22,7 +22,7 @@
 /* This styles the navbar and its contents */
 
 #navbar {
-    height: 60px;
+    height: 30px;
     width: 100%;
     position: absolute;
     top: 20px;
@@ -33,7 +33,7 @@
 /* This styles the logo in the navbar */
 
 #navbar #logo {
-    height: 60px;
+    height: 30px;
     width: 60px;
     position: absolute;
     left: 3%;
@@ -44,7 +44,7 @@
 /* This styles the logo image to be used in the navbar */
 
 #navbar #logo img {
-    height: 60px;
+    height: 30px;
     width: 60px;
 }
 
@@ -64,7 +64,7 @@
 /* This changes the appearance of the listed links in the navbar */
 
 #navbar ul li {
-    height: 60px;
+    height: 30px;
     width: 80px;
     margin: 0 30px;
     display: grid;
@@ -84,7 +84,7 @@
 /* This styles the descriptions of the 3D object */
 
 #content {
-    height: 500px;
+    height: 250px;
     width: 700px;
     position: absolute;
     left: 12%;
