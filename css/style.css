@@ -84,11 +84,11 @@
 /* This styles the descriptions of the 3D object */
 
 #content {
-    height: 300px;
-    width: 1400px;
+    height: 150px;
+    width: 700px;
     position: absolute;
     left: 12%;
-    top: calc(100% - 250px);
+    top: calc(50% - 250px);
 }
 
 
