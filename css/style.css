@@ -12,8 +12,8 @@
 /*  This is for styling the main container that holds everything */
 
 #container {
-    height: 100vh;
-    width: 200%;
+    height: 75vh;
+    width: 100%;
     position: relative;
     background: #f7f7f7;
 }
