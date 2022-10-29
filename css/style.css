@@ -213,16 +213,8 @@
 }
 
 @media only screen and (min-device-width : 353px) and (max-device-width : 768px) {
-#content {
-    height: 150px;
-    width: 1400px;
-    position: absolute;
-    left: 0;
-    top: calc(100% - 145px);
-}
-    
-.stretched #wrapper{
-        width: 1040px;
+html {
+     width: 1185px !important;
 }
     
 }
