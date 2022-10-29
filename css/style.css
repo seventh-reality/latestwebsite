@@ -195,8 +195,8 @@
     height: 600px;
     width: 600px;
     position: absolute;
-    top: calc(75% - 250px);
-    right: 25%;
+    top: calc(100% - 250px);
+    right: 0%;
 }
 
 
