@@ -85,7 +85,6 @@
 
 #content {
     height: 150px;
-    width: 1400px;
     position: absolute;
     left: 12%;
     top: calc(100% - 250px);
@@ -222,5 +221,9 @@ html {
 @media only screen and (max-width : 991px) {
  #header.transparent-header.dark:not(.sticky-header) #header-wrap{
      width: 740px;
+    }
+    
+    #content{
+        width: 700px;
     }
 }
