@@ -218,3 +218,9 @@ html {
 }
     
 }
+
+@media only screen and (max-device-width : 991px) {
+ #header.transparent-header.dark:not(.sticky-header) #header-wrap{
+     width: 740px;
+    }
+}
