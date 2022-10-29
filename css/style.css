@@ -4,7 +4,7 @@
     height: 600px;
     width: 600px;
     position: absolute;
-    top: calc(0% - 250px);
+    top: calc(-200% - 250px);
     right: 7%;
 }
 
@@ -23,8 +23,8 @@
     height: 600px;
     width: 600px;
     position: absolute;
-    top: calc(100% - 250px);
-    right: 0%;
+    top: calc(-100% - 250px);
+    right: 7%;
 }
 
 
