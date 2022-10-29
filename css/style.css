@@ -212,7 +212,7 @@
     border: none;
 }
 
-@media only screen and (min-device-width : 354px) and (max-device-width : 768px) {
+@media only screen and (min-device-width : 353px) and (max-device-width : 768px) {
 #content {
     height: 150px;
     width: 1400px;
