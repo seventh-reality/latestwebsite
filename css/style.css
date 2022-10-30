@@ -1,39 +1,6 @@
 
 
 
-/* This styles the heading in the 3D description */
-
-#content h2 {
-    font-size: 140px;
-    color: grey;
-}
-
-
-/* This styles the paragraph in the 3D description*/
-
-#content p {
-    font-size: 20px;
-    color: rgb(189, 189, 189);
-}
-
-
-/* This styles the button in the 3D description*/
-
-#content button {
-    width: 35%;
-    height: 40px;
-    font-size: 16px;
-    font-family: sans-serif;
-    margin-top: 5vh;
-    margin-left: center;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    background: dodgerblue;
-    color: white;
-}
-
-
 /* This adds some hover effects over the button */
 
 #content button:hover {
