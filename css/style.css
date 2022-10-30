@@ -3,14 +3,7 @@
 
 /* This styles the unlisted links in the navbar */
 
-#navbar ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 5%;
-    top: 0;
-}
+
 
 
 /* This changes the appearance of the listed links in the navbar */
