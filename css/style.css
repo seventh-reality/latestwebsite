@@ -77,45 +77,6 @@
 }
 
 
-/* This styles the social media icons*/
-
-#icons {
-    height: 500px;
-    width: 140px;
-    background: none;
-    position: absolute;
-    left: 0;
-    top: calc(50% - 250px);
-    display: flex;
-    align-items: center;
-    filter: drop-shadow(2px 2px 2px grey);
-}
-
-
-/* This styles the social media icons logos*/
-
-#icons #iconsLogo {
-    height: 300px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* This styles the social media icons logos images*/
-
-#icons #iconsLogo i {
-    height: 50px;
-    width: 50px;
-    font-size: 30px;
-    margin: 10px;
-    color: grey;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-}
-
-
 /* This styles the aside container */
 
 #aSide {
