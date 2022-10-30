@@ -1,31 +1,6 @@
 
 
 
-/* This styles the unlisted links in the navbar */
-
-
-
-
-/* This changes the appearance of the listed links in the navbar */
-
-#navbar ul li {
-    height: 60px;
-    width: 80px;
-    margin: 0 30px;
-    display: grid;
-    place-items: center;
-    color: grey;
-}
-
-
-/* This sets the hover action of the navbar links */
-
-#navbar ul:hover .active {
-    background: none;
-    border: none;
-}
-
-
 /* This styles the descriptions of the 3D object */
 
 #content {
