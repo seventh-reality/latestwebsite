@@ -1,36 +1,6 @@
 
 
 
-/* This styles the navbar and its contents */
-
-#navbar {
-    height: 60px;
-    width: 100%;
-    position: absolute;
-    top: 20px;
-    left: 0;
-}
-
-
-/* This styles the logo in the navbar */
-
-#navbar #logo {
-    height: 60px;
-    width: 60px;
-    position: absolute;
-    left: 3%;
-    top: -5px;
-}
-
-
-/* This styles the logo image to be used in the navbar */
-
-#navbar #logo img {
-    height: 60px;
-    width: 60px;
-}
-
-
 /* This styles the unlisted links in the navbar */
 
 #navbar ul {
