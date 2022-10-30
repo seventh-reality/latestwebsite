@@ -1,20 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    color: grey;
-}
 
-
-/*  This is for styling the main container that holds everything */
-
-#container {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background: #f7f7f7;
-}
 
 
 /* This styles the navbar and its contents */
