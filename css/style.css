@@ -15,7 +15,7 @@
 /* This styles the aside container */
 
 #aSide {
-    height: 600px;
+    height: 1000px;
     width: 800px;
     position: absolute;
     top: calc(20% - 250px);
@@ -26,7 +26,7 @@
 /* This styles the 3D object inserted in the aside container */
 
 #aSide model-viewer {
-    height: 600px;
+    height: 1000px;
     width: 800px;
     position: absolute;
     top: 0;
@@ -34,7 +34,7 @@
     border: none;
 }
 #aSid {
-    height: 600px;
+    height: 1000px;
     width: 800px;
     position: absolute;
     top: calc(12% - 250px);
@@ -45,7 +45,7 @@
 /* This styles the 3D object inserted in the aside container */
 
 #aSid model-viewer {
-    height: 600px;
+    height: 1000px;
     width: 800px;
     position: absolute;
     top: 0;
