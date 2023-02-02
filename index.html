@@ -931,13 +931,36 @@
 							</div>
 	
 							<div class="col-lg-4">
+								<form action="index.php" method="POST">
+								<?php
+								$userEmail = "";
+								if(isset($_POST['subscribe'])){
+									$userEmail = $_POST['email'];
+									if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
+                                        $subject = "Thanks For subscribing us - codingnepal";
+										$sender = "pagadala687@gmail.com"
+										if(mail($userEmail,$subject, $sender)){
+											?>
+											<div class="alert"><?php echo $userEmail ?> is not a valid email </div>
+											<?php
+
+										}else{
+
+										}
+									}else{
+                                       ?>
+									   <div class="alert"><?php echo $userEmail ?> is not a valid email </div>
+									   <?php
+									}
+								}
+								?>
 	
 								<div class="widget subscribe-widget clearfix" data-loader="button">
 									<h4>Subscribe</h4>
 	
 									<div class="widget-subscribe-form-result"></div>
 									<form id="widget-subscribe-form" action="include/subscribe.php" method="post" class="mb-0">
-										<input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email" class="form-control form-control-lg not-dark required email" placeholder="Your Email Address">
+										<input type="email" id="widget-subscribe-form-email" name="email" class="form-control form-control-lg not-dark required email" placeholder="Your Email Address">
 										<button class="button button-border button-circle button-light topmargin-sm" type="submit">Subscribe Now</button>
 									</form>
 								</div>
