@@ -6691,7 +6691,7 @@ body:not(.has-plugin-html5video) .video-wrap video {
 }
 
 .grid-inner {
-	width: 110%;
+	width: 100%;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
